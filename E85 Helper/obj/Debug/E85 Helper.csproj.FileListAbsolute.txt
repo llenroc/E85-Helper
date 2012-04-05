@@ -1,0 +1,15 @@
+c:\users\johnsoow\documents\visual studio 2010\Projects\E85 Helper\E85 Helper\Bin\Debug\ApplicationIcon.png
+c:\users\johnsoow\documents\visual studio 2010\Projects\E85 Helper\E85 Helper\Bin\Debug\Background.png
+c:\users\johnsoow\documents\visual studio 2010\Projects\E85 Helper\E85 Helper\Bin\Debug\E85 Helper.dll
+c:\users\johnsoow\documents\visual studio 2010\Projects\E85 Helper\E85 Helper\Bin\Debug\E85 Helper.pdb
+c:\users\johnsoow\documents\visual studio 2010\Projects\E85 Helper\E85 Helper\Bin\Debug\AppManifest.xaml
+c:\users\johnsoow\documents\visual studio 2010\Projects\E85 Helper\E85 Helper\Bin\Debug\E85_Helper.xap
+c:\users\johnsoow\documents\visual studio 2010\Projects\E85 Helper\E85 Helper\Bin\Debug\Microsoft.Phone.Controls.dll
+c:\users\johnsoow\documents\visual studio 2010\Projects\E85 Helper\E85 Helper\Bin\Debug\Microsoft.Phone.Controls.xml
+c:\users\johnsoow\documents\visual studio 2010\Projects\E85 Helper\E85 Helper\obj\Debug\ResolveAssemblyReference.cache
+c:\users\johnsoow\documents\visual studio 2010\Projects\E85 Helper\E85 Helper\obj\Debug\App.g.i.cs
+c:\users\johnsoow\documents\visual studio 2010\Projects\E85 Helper\E85 Helper\obj\Debug\MainPage.g.i.cs
+c:\users\johnsoow\documents\visual studio 2010\Projects\E85 Helper\E85 Helper\obj\Debug\E85 Helper.g.resources
+c:\users\johnsoow\documents\visual studio 2010\Projects\E85 Helper\E85 Helper\obj\Debug\E85 Helper.dll
+c:\users\johnsoow\documents\visual studio 2010\Projects\E85 Helper\E85 Helper\obj\Debug\E85 Helper.pdb
+c:\users\johnsoow\documents\visual studio 2010\Projects\E85 Helper\E85 Helper\obj\Debug\XapCacheFile.xml
