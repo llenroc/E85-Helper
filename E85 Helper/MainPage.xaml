@@ -18,31 +18,29 @@
     <!--LayoutRoot is the root grid where all page content is placed-->
     <Grid x:Name="LayoutRoot" Background="Transparent">
         <!--Pivot Control-->
-        <controls:Pivot Title="E85 Helper">
+        <controls:Pivot Title="FlexFuel Helper">
             <!--Pivot item one-->
-            <controls:PivotItem Header="fuel">
-                <StackPanel >
-                    <StackPanel Orientation="Horizontal">
-                        <TextBlock Style="{StaticResource PhoneTextLargeStyle}">E85 Price:</TextBlock>
-                        <TextBlock Style="{StaticResource PhoneTextLargeStyle}">$1.25</TextBlock>
-                    </StackPanel>
-                    <Slider Minimum="1.0" Maximum="10.0"  />
-                </StackPanel>
-            </controls:PivotItem>
-
-            <!--Pivot item two-->
-            <controls:PivotItem Header="second">
-                <!--Triple line list no text wrapping-->
-                <ListBox x:Name="SecondListBox" Margin="0,0,-12,0" ItemsSource="{Binding Items}">
+            <controls:PivotItem Header="buy">
+                <ListBox ItemsSource="{Binding Fuels}">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
-                            <StackPanel Margin="0,0,0,17">
-                                <TextBlock Text="{Binding LineOne}" TextWrapping="NoWrap" Margin="12,0,0,0" Style="{StaticResource PhoneTextExtraLargeStyle}"/>
-                                <TextBlock Text="{Binding LineThree}" TextWrapping="NoWrap" Margin="12,-6,0,0" Style="{StaticResource PhoneTextSubtleStyle}"/>
-                            </StackPanel>
+                            <ListBoxItem>
+                                <StackPanel>
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBlock Style="{StaticResource PhoneTextLargeStyle}" Text="{Binding Name}"></TextBlock>
+                                        <TextBlock Style="{StaticResource PhoneTextLargeStyle}" Text="{Binding LastKnownPrice, StringFormat=c}"></TextBlock>
+                                    </StackPanel>
+                                    <Slider Minimum="1.0" Maximum="10.0" Value="{Binding LastKnownPrice}" MinWidth="350"  />
+                                </StackPanel>
+                            </ListBoxItem>
                         </DataTemplate>
                     </ListBox.ItemTemplate>
                 </ListBox>
+
+            </controls:PivotItem>
+
+            <controls:PivotItem Header="types">
+                
             </controls:PivotItem>
         </controls:Pivot>
     </Grid>
