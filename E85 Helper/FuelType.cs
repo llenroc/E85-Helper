@@ -22,11 +22,12 @@ namespace E85_Helper
         /// Price last seen in local currency.
         /// </summary>
         [XmlAttribute]
-        public float LastKnownPrice { get; set; }
+        public float Price { get; set; }
 
         public float FuelYield(Vehicle vehicle)
         {
-
+            foreach (var dp in vehicle.MPGDataPoints)
+                
             return .1f;
         }
     }
