@@ -7,13 +7,13 @@
     xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="768" 
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="800" 
     d:DataContext="{d:DesignData SampleData/MainViewModelSampleData.xaml}"
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
     SupportedOrientations="Portrait"  Orientation="Portrait"
-    shell:SystemTray.IsVisible="True">
+    shell:SystemTray.IsVisible="False">
 
     <!--LayoutRoot is the root grid where all page content is placed-->
     <Grid x:Name="LayoutRoot" Background="Transparent">
@@ -24,8 +24,8 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        <TextBlock Style="{StaticResource PhoneTextTitle1Style}" Text="FlexFuel Chooser" Grid.Row="0"/>
-        <ListBox ItemsSource="{Binding Fuels}" Grid.Row="1">
+        <TextBlock Style="{StaticResource PhoneTextTitle1Style}" Text="Flexfuel Buddy" />
+                   <ListBox ItemsSource="{Binding Fuels}" Grid.Row="1">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <ListBoxItem>

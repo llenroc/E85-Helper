@@ -18,6 +18,20 @@ namespace E85_Helper
         public Fillup()
         {
             InitializeComponent();
+            this.DataContext = App.ViewModel.SelectedFuel;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                App.ViewModel.Car.FillUpTank(App.ViewModel.SelectedFuel, System.Convert.ToSingle(GallonsBox.Text), System.Convert.ToInt32(DistanceBox.Text));
+                NavigationService.Navigate(new Uri("/MainPage.xaml", UriKind.Relative));
+            }
+            catch (Exception)
+            {
+                
+            }
         }
     }
 }
