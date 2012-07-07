@@ -33,5 +33,11 @@ namespace E85_Helper
                 App.ViewModel.LoadData();
             }
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            App.ViewModel.SelectedFuel = (FuelType)((Button)sender).DataContext;
+            NavigationService.Navigate(new Uri("/Fillup.xaml", UriKind.Relative));
+        }
     }
 }

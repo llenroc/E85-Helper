@@ -1,6 +1,11 @@
 ﻿<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" EntryPointAssembly="E85 Helper" EntryPointType="E85_Helper.App" RuntimeVersion="4.7.50308.0">
   <Deployment.Parts>
     <AssemblyPart x:Name="E85 Helper" Source="E85 Helper.dll" />
+    <AssemblyPart x:Name="InfragisticsWP7.Controls.Charts.XamDataChart.v12.1" Source="InfragisticsWP7.Controls.Charts.XamDataChart.v12.1.dll" />
+    <AssemblyPart x:Name="InfragisticsWP7.Controls.Interactions.XamInfoBox.v12.1" Source="InfragisticsWP7.Controls.Interactions.XamInfoBox.v12.1.dll" />
+    <AssemblyPart x:Name="InfragisticsWP7.DataVisualization.v12.1" Source="InfragisticsWP7.DataVisualization.v12.1.dll" />
+    <AssemblyPart x:Name="InfragisticsWP7.v12.1" Source="InfragisticsWP7.v12.1.dll" />
     <AssemblyPart x:Name="Microsoft.Phone.Controls" Source="Microsoft.Phone.Controls.dll" />
+    <AssemblyPart x:Name="InfragisticsWP7.Controls.Interactions.XamWindow.v12.1" Source="InfragisticsWP7.Controls.Interactions.XamWindow.v12.1.dll" />
   </Deployment.Parts>
 </Deployment>

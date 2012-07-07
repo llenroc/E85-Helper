@@ -48,6 +48,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="InfragisticsWP7.Controls.Charts.XamDataChart.v12.1, Version=12.1.20121.1032, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="InfragisticsWP7.Controls.Interactions.XamInfoBox.v12.1, Version=12.1.20121.1032, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="InfragisticsWP7.DataVisualization.v12.1, Version=12.1.20121.1032, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="InfragisticsWP7.v12.1, Version=12.1.20121.1032, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
     <Reference Include="Microsoft.Phone" />
     <Reference Include="Microsoft.Phone.Controls" />
     <Reference Include="Microsoft.Phone.Interop" />
@@ -61,6 +65,9 @@
   <ItemGroup>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Fillup.xaml.cs">
+      <DependentUpon>Fillup.xaml</DependentUpon>
     </Compile>
     <Compile Include="FuelType.cs" />
     <Compile Include="MainPage.xaml.cs">
@@ -77,6 +84,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
+    <Page Include="Fillup.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

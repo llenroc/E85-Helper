@@ -13,3 +13,35 @@ c:\users\johnsoow\documents\visual studio 2010\Projects\E85 Helper\E85 Helper\ob
 c:\users\johnsoow\documents\visual studio 2010\Projects\E85 Helper\E85 Helper\obj\Debug\E85 Helper.dll
 c:\users\johnsoow\documents\visual studio 2010\Projects\E85 Helper\E85 Helper\obj\Debug\E85 Helper.pdb
 c:\users\johnsoow\documents\visual studio 2010\Projects\E85 Helper\E85 Helper\obj\Debug\XapCacheFile.xml
+C:\Users\Owen\Documents\Visual Studio 2012\Projects\E85-Helper\E85 Helper\obj\Debug\E85 Helper.csprojResolveAssemblyReference.cache
+C:\Users\Owen\Documents\Visual Studio 2012\Projects\E85-Helper\E85 Helper\obj\Debug\App.g.i.cs
+C:\Users\Owen\Documents\Visual Studio 2012\Projects\E85-Helper\E85 Helper\obj\Debug\MainPage.g.i.cs
+C:\Users\Owen\Documents\Visual Studio 2012\Projects\E85-Helper\E85 Helper\obj\Debug\E85 Helper.g.resources
+C:\Users\Owen\Documents\Visual Studio 2012\Projects\E85-Helper\E85 Helper\obj\Debug\E85 Helper.dll
+C:\Users\Owen\Documents\Visual Studio 2012\Projects\E85-Helper\E85 Helper\Bin\Debug\ApplicationIcon.png
+C:\Users\Owen\Documents\Visual Studio 2012\Projects\E85-Helper\E85 Helper\Bin\Debug\Background.png
+C:\Users\Owen\Documents\Visual Studio 2012\Projects\E85-Helper\E85 Helper\Bin\Debug\E85 Helper.dll
+C:\Users\Owen\Documents\Visual Studio 2012\Projects\E85-Helper\E85 Helper\Bin\Debug\E85 Helper.pdb
+C:\Users\Owen\Documents\Visual Studio 2012\Projects\E85-Helper\E85 Helper\Bin\Debug\AppManifest.xaml
+C:\Users\Owen\Documents\Visual Studio 2012\Projects\E85-Helper\E85 Helper\Bin\Debug\E85_Helper.xap
+C:\Users\Owen\Documents\Visual Studio 2012\Projects\E85-Helper\E85 Helper\Bin\Debug\Microsoft.Phone.Controls.dll
+C:\Users\Owen\Documents\Visual Studio 2012\Projects\E85-Helper\E85 Helper\Bin\Debug\Microsoft.Phone.Controls.xml
+C:\Users\Owen\Documents\Visual Studio 2012\Projects\E85-Helper\E85 Helper\obj\Debug\E85 Helper.pdb
+C:\Users\Owen\Documents\Visual Studio 2012\Projects\E85-Helper\E85 Helper\obj\Debug\XapCacheFile.xml
+C:\Users\Owen\Documents\Visual Studio 2012\Projects\E85-Helper\E85 Helper\Bin\Debug\InfragisticsWP7.Controls.Charts.XamDataChart.v12.1.dll
+C:\Users\Owen\Documents\Visual Studio 2012\Projects\E85-Helper\E85 Helper\Bin\Debug\InfragisticsWP7.Controls.Interactions.XamInfoBox.v12.1.dll
+C:\Users\Owen\Documents\Visual Studio 2012\Projects\E85-Helper\E85 Helper\Bin\Debug\InfragisticsWP7.DataVisualization.v12.1.dll
+C:\Users\Owen\Documents\Visual Studio 2012\Projects\E85-Helper\E85 Helper\Bin\Debug\InfragisticsWP7.v12.1.dll
+C:\Users\Owen\Documents\Visual Studio 2012\Projects\E85-Helper\E85 Helper\Bin\Debug\InfragisticsWP7.Controls.Interactions.XamWindow.v12.1.dll
+C:\Users\Owen\Documents\Visual Studio 2012\Projects\E85-Helper\E85 Helper\Bin\Debug\InfragisticsWP7.Controls.Charts.XamDataChart.v12.1.xml
+C:\Users\Owen\Documents\Visual Studio 2012\Projects\E85-Helper\E85 Helper\Bin\Debug\InfragisticsWP7.Controls.Interactions.XamInfoBox.v12.1.xml
+C:\Users\Owen\Documents\Visual Studio 2012\Projects\E85-Helper\E85 Helper\Bin\Debug\InfragisticsWP7.DataVisualization.v12.1.xml
+C:\Users\Owen\Documents\Visual Studio 2012\Projects\E85-Helper\E85 Helper\Bin\Debug\InfragisticsWP7.v12.1.xml
+C:\Users\Owen\Documents\Visual Studio 2012\Projects\E85-Helper\E85 Helper\Bin\Debug\InfragisticsWP7.Controls.Interactions.XamWindow.v12.1.xml
+C:\Users\Owen\Documents\Visual Studio 2012\Projects\E85-Helper\E85 Helper\Bin\Debug\de\InfragisticsWP7.DataVisualization.v12.1.resources.dll
+C:\Users\Owen\Documents\Visual Studio 2012\Projects\E85-Helper\E85 Helper\Bin\Debug\es\InfragisticsWP7.DataVisualization.v12.1.resources.dll
+C:\Users\Owen\Documents\Visual Studio 2012\Projects\E85-Helper\E85 Helper\Bin\Debug\fr\InfragisticsWP7.DataVisualization.v12.1.resources.dll
+C:\Users\Owen\Documents\Visual Studio 2012\Projects\E85-Helper\E85 Helper\Bin\Debug\de\InfragisticsWP7.v12.1.resources.dll
+C:\Users\Owen\Documents\Visual Studio 2012\Projects\E85-Helper\E85 Helper\Bin\Debug\es\InfragisticsWP7.v12.1.resources.dll
+C:\Users\Owen\Documents\Visual Studio 2012\Projects\E85-Helper\E85 Helper\Bin\Debug\fr\InfragisticsWP7.v12.1.resources.dll
+C:\Users\Owen\Documents\Visual Studio 2012\Projects\E85-Helper\E85 Helper\obj\Debug\Fillup.g.i.cs
