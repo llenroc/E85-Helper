@@ -12,6 +12,8 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
+using System.Xml.Serialization;
+using System.IO.IsolatedStorage;
 
 namespace E85_Helper
 {
@@ -103,7 +105,13 @@ namespace E85_Helper
         // This code will not execute when the application is deactivated
         private void Application_Closing(object sender, ClosingEventArgs e)
         {
-            // Ensure that required application state is persisted here.
+            var model = new Model();
+            model.Car = App.ViewModel.Car;
+            model.Fuels = App.ViewModel.Fuels.ToList();
+            var cerealizer = new XmlSerializer(typeof(Model));
+            var file = IsolatedStorageFile.GetUserStoreForApplication().CreateFile("prefs.xml");
+            cerealizer.Serialize(file, model);
+            file.Close();
         }
 
         // Code to execute if a navigation fails

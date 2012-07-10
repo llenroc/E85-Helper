@@ -13,6 +13,9 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Collections.ObjectModel;
 using System.Globalization;
+using System.Xml.Serialization;
+using System.IO;
+using System.IO.IsolatedStorage;
 
 
 namespace E85_Helper
@@ -41,25 +44,40 @@ namespace E85_Helper
         /// </summary>
         public void LoadData()
         {
-            Fuels.Add(new FuelType() { Name = "E85", PercentEthanol = .85f, Price = 2.67f });
-            Fuels.Add(new FuelType() { Name = "E50", PercentEthanol = .50f, Price = 3.0f });
-            Fuels.Add(new FuelType() { Name = "Unleaded", PercentEthanol = .10f, Price = 3.86f });
-            Car.Odometer = 0;
-            Car.TankSize = 10;
-            Car.UnknownFuel = 1;
-            Car.Ethanol = 0;
-            Car.Gasoline = 0;
-            Car.Name = "Boris";
-            Car.FillUpTank(new FuelType() { PercentEthanol = .10f }, 10, 290);
-            Car.FillUpTank(new FuelType() { PercentEthanol = .85f }, 8.9f, 290);
-            Car.FillUpTank(new FuelType() { PercentEthanol = .10f }, 5.7f, 230);
-            Car.FillUpTank(new FuelType() { PercentEthanol = .85f }, 9.4f, 350);
-            Car.FillUpTank(new FuelType() { PercentEthanol = .10f }, 9.7f, 220);
-            Car.FillUpTank(new FuelType() { PercentEthanol = .10f }, 9.6f, 290);
-            Car.FillUpTank(new FuelType() { PercentEthanol = .85f }, 9.4f, 290);
-            Car.FillUpTank(new FuelType() { PercentEthanol = .85f }, 9.1f, 180);
-            Car.FillUpTank(new FuelType() { PercentEthanol = .85f }, 9.3f, 180);
-            Car.FillUpTank(new FuelType() { PercentEthanol = .10f }, 9.4f, 180);
+            try
+            {
+                XmlSerializer serializer = new XmlSerializer(typeof(Model));
+                FileStream fs = IsolatedStorageFile.GetUserStoreForApplication().OpenFile("flexfuel.xml", FileMode.Open);
+
+                var model = (Model)serializer.Deserialize(fs);
+                fs.Close();
+            }
+            catch (Exception)
+            {
+                Fuels.Add(new FuelType() { Name = "E85", PercentEthanol = .85f, Price = 2.67f });
+                Fuels.Add(new FuelType() { Name = "E10", PercentEthanol = .10f, Price = 3.46f });
+                Fuels.Add(new FuelType() { Name = "Gasoline", PercentEthanol = 0, Price = 3.86f });
+
+                Car.Odometer = 0;
+                Car.TankSize = 10;
+                Car.UnknownFuel = 1;
+                Car.Ethanol = 0;
+                Car.Gasoline = 0;
+            }
+
+
+
+            //Car.Name = "Boris";
+            //Car.FillUpTank(new FuelType() { PercentEthanol = .10f }, 10, 290);
+            //Car.FillUpTank(new FuelType() { PercentEthanol = .85f }, 8.9f, 290);
+            //Car.FillUpTank(new FuelType() { PercentEthanol = .10f }, 5.7f, 230);
+            //Car.FillUpTank(new FuelType() { PercentEthanol = .85f }, 9.4f, 350);
+            //Car.FillUpTank(new FuelType() { PercentEthanol = .10f }, 9.7f, 220);
+            //Car.FillUpTank(new FuelType() { PercentEthanol = .10f }, 9.6f, 290);
+            //Car.FillUpTank(new FuelType() { PercentEthanol = .85f }, 9.4f, 290);
+            //Car.FillUpTank(new FuelType() { PercentEthanol = .85f }, 9.1f, 180);
+            //Car.FillUpTank(new FuelType() { PercentEthanol = .85f }, 9.3f, 180);
+            //Car.FillUpTank(new FuelType() { PercentEthanol = .10f }, 9.4f, 180);
 
             // Sample data; replace with real data
             this.IsDataLoaded = true;
