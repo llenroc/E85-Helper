@@ -17,7 +17,7 @@ namespace E85_Helper
         public float Gasoline { get; set; }
         [XmlAttribute]
         public float UnknownFuel { get; set; }
-        [XmlElement]
+        [XmlArray]
         public List<FuelUsageDataPoint> MPGDataPoints { get; set; }
 
         public Vehicle()

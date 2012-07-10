@@ -39,5 +39,10 @@ namespace E85_Helper
             App.ViewModel.SelectedFuel = (FuelType)((Button)sender).DataContext;
             NavigationService.Navigate(new Uri("/Fillup.xaml", UriKind.Relative));
         }
+
+        private void Slider_MouseLeave(object sender, MouseEventArgs e)
+        {
+            App.ViewModel.RecalcAll();
+        }
     }
 }

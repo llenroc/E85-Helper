@@ -50,6 +50,8 @@ namespace E85_Helper
                 FileStream fs = IsolatedStorageFile.GetUserStoreForApplication().OpenFile("flexfuel.xml", FileMode.Open);
 
                 var model = (Model)serializer.Deserialize(fs);
+                App.ViewModel.Car = model.Car;
+                App.ViewModel.Fuels = new ObservableCollection<FuelType>(model.Fuels);
                 fs.Close();
             }
             catch (Exception)
@@ -65,6 +67,7 @@ namespace E85_Helper
                 Car.Gasoline = 0;
             }
 
+            PropertyChanged(this, new PropertyChangedEventArgs(""));
 
 
             //Car.Name = "Boris";

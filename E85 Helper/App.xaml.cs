@@ -99,17 +99,23 @@ namespace E85_Helper
         // This code will not execute when the application is closing
         private void Application_Deactivated(object sender, DeactivatedEventArgs e)
         {
+            Persist();
         }
 
         // Code to execute when the application is closing (eg, user hit Back)
         // This code will not execute when the application is deactivated
         private void Application_Closing(object sender, ClosingEventArgs e)
         {
+            Persist();
+        }
+
+        public static void Persist()
+        {
             var model = new Model();
             model.Car = App.ViewModel.Car;
             model.Fuels = App.ViewModel.Fuels.ToList();
             var cerealizer = new XmlSerializer(typeof(Model));
-            var file = IsolatedStorageFile.GetUserStoreForApplication().CreateFile("prefs.xml");
+            var file = IsolatedStorageFile.GetUserStoreForApplication().CreateFile("flexfuel.xml");
             cerealizer.Serialize(file, model);
             file.Close();
         }

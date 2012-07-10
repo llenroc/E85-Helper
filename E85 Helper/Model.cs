@@ -13,11 +13,12 @@ using System.Xml.Serialization;
 
 namespace E85_Helper
 {
+    [XmlRoot]
     public class Model
     {
         [XmlElement]
         public Vehicle Car { get; set; }
-        [XmlElement]
+        [XmlArray]
         public List<FuelType> Fuels { get; set; }
     }
 }

@@ -1,4 +1,4 @@
-﻿<phone:PhoneApplicationPage xmlns:ig="clr-namespace:Infragistics.Controls.Charts;assembly=InfragisticsWP7.Controls.Charts.XamDataChart.v12.1"  
+﻿<phone:PhoneApplicationPage 
     x:Class="E85_Helper.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -36,7 +36,7 @@
                                     <TextBlock Style="{StaticResource PhoneTextLargeStyle}" Text="{Binding Price, StringFormat=c}" Foreground="{Binding Color}"></TextBlock>
                                     <TextBlock Style="{StaticResource PhoneTextLargeStyle}" Text="{Binding Score, StringFormat=c}" Foreground="{Binding Color}"/>
                                 </StackPanel>
-                                <Slider Minimum="1.0" Maximum="6.0" Value="{Binding Price,Mode=TwoWay}" Width="350"  />
+                                <Slider Minimum="1.0" Maximum="6.0" Value="{Binding Price,Mode=TwoWay}" Width="350" MouseLeave="Slider_MouseLeave"  />
                             </StackPanel>
                             <Button Click="Button_Click">Buy</Button>
                         </StackPanel>

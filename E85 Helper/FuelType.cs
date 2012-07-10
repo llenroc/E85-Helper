@@ -24,7 +24,7 @@ namespace E85_Helper
         /// Price last seen in local currency.
         /// </summary>
         [XmlAttribute]
-        public float Price { get { return _price; } set { _price = value; App.ViewModel.RecalcAll(); } }
+        public float Price { get { return _price; } set { _price = value; Recalc(); } }
         private float _price;
 
         [XmlIgnore]
@@ -38,7 +38,7 @@ namespace E85_Helper
                 return (float)Math.Round((_price ) / (new FuelType() { PercentEthanol = predictedPercentEthanol }.FuelYield(App.ViewModel.Car)), 2);
             }
         }
-
+        [XmlIgnore]
         public Brush Color
         {
             get
@@ -50,12 +50,11 @@ namespace E85_Helper
                         (SolidColorBrush)App.Current.Resources["PhoneForegroundBrush"];
             }
         }
-
+        [XmlIgnore]
         public float MPG
         {
             get { return FuelYield(App.ViewModel.Car); }
         }
-
         public float FuelYield(Vehicle vehicle)
         {
             var PercentEthanols = new List<float>();
