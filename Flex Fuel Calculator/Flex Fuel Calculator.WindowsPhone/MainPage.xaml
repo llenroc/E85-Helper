@@ -16,24 +16,51 @@
     <Grid>
         <Pivot>
             <PivotItem Header="Facts">
-                <ItemsControl ItemsSource="{Binding Fuels}">
-                    <ItemsControl.ItemTemplate>
-                        <DataTemplate>
-                            <Grid>
-                                <Grid.RowDefinitions>
-                                    <RowDefinition/>
-                                    <RowDefinition/>
-                                    <RowDefinition/>
-                                </Grid.RowDefinitions>
-                                <TextBlock Text="{Binding Name}" Style="{ThemeResource GroupHeaderTextBlockStyle}" Grid.Row="0"/>
-                                <TextBlock Text="{Binding PricePerDistanceUnit, Converter={StaticResource sfc},ConverterParameter=\{0:c\} per Mile}" Grid.Row="1"/>
-                                <TextBlock Text="{Binding KiloGramsOfCarbonEmissionsPerDistanceUnit, Converter={StaticResource sfc},ConverterParameter=\{0:f\}kg of CO² per Mile}" Grid.Row="2" />
-                            </Grid>
-                        </DataTemplate>
-                    </ItemsControl.ItemTemplate>
-                </ItemsControl>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Row="0" Style="{ThemeResource TitleTextBlockStyle}" TextWrapping="WrapWholeWords">Here's how much money it takes to drive with these fuels and how much Carbon you'll put into the air by using them.</TextBlock>
+                    <ItemsControl ItemsSource="{Binding Fuels}" Grid.Row="1">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition/>
+                                        <RowDefinition/>
+                                        <RowDefinition/>
+                                    </Grid.RowDefinitions>
+                                    <TextBlock Text="{Binding Name}" Style="{ThemeResource GroupHeaderTextBlockStyle}" Grid.Row="0"/>
+                                    <TextBlock Text="{Binding PricePerDistanceUnit, Converter={StaticResource sfc},ConverterParameter=\{0:c\} per Mile}" Grid.Row="1"/>
+                                    <TextBlock Text="{Binding KiloGramsOfCarbonEmissionsPerDistanceUnit, Converter={StaticResource sfc},ConverterParameter=\{0:f4\}kg of CO² per Mile}" Grid.Row="2" />
+                                </Grid>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </Grid>
             </PivotItem>
-            <PivotItem Header="Fuel Prices"></PivotItem>
+            <PivotItem Header="Fuel Prices">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Row="0" Style="{ThemeResource TitleTextBlockStyle}" TextWrapping="WrapWholeWords">Please update the prices of each fuel type with today's local prices.</TextBlock>
+                    <ItemsControl ItemsSource="{Binding Fuels}" Grid.Row="1">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel>
+                                    <TextBlock Text="{Binding Name}" Style="{ThemeResource GroupHeaderTextBlockStyle}" Grid.Row="0"/>
+                                    <TextBox Text="{Binding PricePerVolumeUnit}"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                    <TextBlock Grid.Row="2" Style="{ThemeResource TitleTextBlockStyle}" TextWrapping="WrapWholeWords">For electricity, enter your price per 33.7KwH. That's how much energy is in a gallon of regular gasoline!</TextBlock>
+                </Grid>
+            </PivotItem>
             <PivotItem Header="Your Vehicle"></PivotItem>
         </Pivot>
     </Grid>
